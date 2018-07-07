@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+select option[value="available"] { /* value not val */
+    background-color:  white;
+}
+
+select option[value="not available"] { /* value not val */
+    background-color: red;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+</style>
+	<title>hello</title>
+</head>
+<body>
+	<form>
+<table>
+	<tr>
+		<th>Days and slots</th>
+		<th>DAY 1</th>
+		<th>DAY 2</th>
+		<th>DAY 3</th>
+		<th>DAY 4</th>
+		<th>DAY 5</th>
+	</tr>
+
+	<tr>
+		<th>Slot 1</th>
+		<td><select>
+			<option>available</option>
+			<option> not available</option>
+		</select></td>
+		<td><select>
+			<option>available</option>
+			<option> not available</option>
+		</select></td>
+		<td><select>
+			<option>available</option>
+			<option> not available</option>
+		</select></td>
+		<td><select>
+			<option>available</option>
+			<option> not available</option>
+		</select></td>
+		<td><select>
+			<option>available</option>
+			<option> not available</option>
+		</select></td>
+	</tr>
+
+
+	<tr>
+		<th>Slot 2</th>
+		<td><select>
+			<option>available</option>
+			<option> not available</option>
+		</select></td>
+		<td><select>
+			<option>available</option>
+			<option> not available</option>
+		</select></td>
+		<td><select>
+			<option>available</option>
+			<option> not available</option>
+		</select></td>
+		<td><select>
+			<option>available</option>
+			<option> not available</option>
+		</select></td>
+		<td><select>
+			<option>available</option>
+			<option> not available</option>
+		</select></td>
+	</tr>
+
+	<tr>
+		<th>Slot 3</th>
+		<td><select>
+			<option>available</option>
+			<option> not available</option>
+		</select></td>
+		<td><select>
+			<option>available</option>
+			<option> not available</option>
+		</select></td>
+		<td><select>
+			<option>available</option>
+			<option> not available</option>
+		</select></td>
+		<td><select>
+			<option>available</option>
+			<option> not available</option>
+		</select></td>
+		<td><select>
+			<option>available</option>
+			<option> not available</option>
+		</select></td>
+	</tr>
+	</table>
+	<br>
+	<input type="submit" name="submit" value="Submit"><br>
+	<br>
+	<input type="reset" name="reset">
+</form>
+
+</body>
+</html>
