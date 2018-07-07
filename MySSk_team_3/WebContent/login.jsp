@@ -12,6 +12,7 @@
     	ResultSet rs;
     	String status;
     	String msg;
+    	String role;
     	%>
     <%
     DRIVER = "com.mysql.jdbc.Driver";
@@ -52,7 +53,20 @@
 				System.out.println("now here");
 				String pwd = rs.getString("password");
 				if(pwd.equals(pass)){
-					session.setAttribute("user",usrName);
+					int index = usrName.indexOf('@');
+					String firstPartEmail = usrName.substring(0,index);
+					session.setAttribute("user",firstPartEmail);
+					role = rs.getString("role");
+					session.setAttribute("role",role);
+					if(role.equals("doctor")){
+						
+					}
+					else if(role.equals("reception")){
+						
+					}
+					else{
+						
+					}
 					//session.sendRedirect("");
 				}
 				else{
