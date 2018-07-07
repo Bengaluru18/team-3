@@ -8,3 +8,19 @@ slot3 varchar(20)
 );
 INSERT INTO doc1 (dept,date1,slot1,slot2,slot3)  VALUES ('Medical Doctor','2018-07-09','white','white','white');
 INSERT INTO doc1 (dept,date1,slot1,slot2,slot3)  VALUES ('Medical Doctor','2018-07-09','white','white','white');
+
+
+CREATE TABLE child
+(
+regno varchar(20),
+dob DATE(20),
+name varchar(20),
+pname varchar(20),
+address varchar(20),
+phno varchar(20),
+);
+INSERT INTO child (regno,dob,name,address,phno)  VALUES ('1','2005-07-09','child1','pchild','9591632022');
+
+INSERT INTO child (regno,dob,name,address,phno)  VALUES ('2','2008-05-09','child12','pchild','9591992022');
+
+INSERT INTO child (regno,dob,name,address,phno)  VALUES ('3','2018-07-09','child3','pchild','95777772022');
