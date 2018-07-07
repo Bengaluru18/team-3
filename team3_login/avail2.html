@@ -3,10 +3,10 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-select option[value=" "] { /* value  Scheduleval */
+select option[value="available"] { /* value not val */
     background-color:  white;
 }
-select option[value=" Schedule "] { /* value  Scheduleval */
+select option[value="not available"] { /* value not val */
     background-color: red;
 }
 table {
@@ -23,9 +23,9 @@ tr:nth-child(even) {
     background-color: #f2f2f2
 }
 </style>
-	<title>Spastics</title>
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spastics </title>
 	<!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
@@ -38,7 +38,7 @@ tr:nth-child(even) {
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 <body>
-	 <div id="wrapper">
+ <div id="wrapper">
         <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
@@ -64,17 +64,15 @@ font-size: 16px;"> Welcome to the Spastics&nbsp; <a href="#" class="btn btn-dang
 					</li>
 				
 					
-                   <li>
-                        <a class="active-menu"  href="index1.html"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
+                    <li>
+                        <a class="active-menu"  href="index3.html"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
                     </li>
-					 <li  >
-                        <a  href="./searchid.html"><i class="fa fa-edit fa-3x"></i> Search By Patient Id </a>
-                    </li>
-					<li  >
-                        <a  href="./searchid.html"><i class="fa fa-edit fa-3x"></i> Search By Patient Reg No. </a>
+					
+					<li>
+                        <a  href="avail2.html"><i class="fa fa-edit fa-3x"></i> Doctor's Availability Calendar </a>
                     </li>
 					<li>
-                        <a  href="avail.html"><i class="fa fa-square fa-3x"></i> Availability Calendar </a>
+                        <a  href="childhistory.html"><i class="fa fa-square fa-3x"></i> Child History </a>
                     </li>
 					<!--
                      <li>
@@ -92,24 +90,25 @@ font-size: 16px;"> Welcome to the Spastics&nbsp; <a href="#" class="btn btn-dang
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>User Dashboard</h2>   
-                        <h5>Welcome User, Love to see you back. </h5>  
+                     <h2>Doctor's Availability Calendar</h2>   
                         
                     </div>
                 </div>              
                  <!-- /. ROW  -->
               
                  <!-- /. ROW  -->
-                <hr />  
-				<div class="row">
-					<form "float:right;">
-					<textarea name="history" rows="10" cols="100" placeholder="Add history here"></textarea><br><br>
-		<select>
-			<option>Doctor 1</option>
-			<option>Doctor 2</option>
-			<option>Doctor 3</option>
-		</select>
-		<br><br>
+                <hr />                
+                <div class="row">
+                    
+                    
+                    
+                    
+                        
+        </div>
+                 <!-- /. ROW  -->
+                <div class="row"> 
+                    
+                      	<form>
 <table>
 	<tr>
 		<th>Days and slots</th>
@@ -123,24 +122,24 @@ font-size: 16px;"> Welcome to the Spastics&nbsp; <a href="#" class="btn btn-dang
 	<tr>
 		<th>Slot 1</th>
 		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+			<option>available</option>
+			<option> not available</option>
 		</select></td>
 		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+			<option>available</option>
+			<option> not available</option>
 		</select></td>
 		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+			<option>available</option>
+			<option> not available</option>
 		</select></td>
 		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+			<option>available</option>
+			<option> not available</option>
 		</select></td>
 		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+			<option>available</option>
+			<option> not available</option>
 		</select></td>
 	</tr>
 
@@ -148,48 +147,48 @@ font-size: 16px;"> Welcome to the Spastics&nbsp; <a href="#" class="btn btn-dang
 	<tr>
 		<th>Slot 2</th>
 		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+			<option>available</option>
+			<option> not available</option>
 		</select></td>
 		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+			<option>available</option>
+			<option> not available</option>
 		</select></td>
 		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+			<option>available</option>
+			<option> not available</option>
 		</select></td>
 		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+			<option>available</option>
+			<option> not available</option>
 		</select></td>
 		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+			<option>available</option>
+			<option> not available</option>
 		</select></td>
 	</tr>
 
 	<tr>
 		<th>Slot 3</th>
 		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+			<option>available</option>
+			<option> not available</option>
 		</select></td>
 		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+			<option>available</option>
+			<option> not available</option>
 		</select></td>
 		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+			<option>available</option>
+			<option> not available</option>
 		</select></td>
 		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+			<option>available</option>
+			<option> not available</option>
 		</select></td>
 		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+			<option>available</option>
+			<option> not available</option>
 		</select></td>
 	</tr>
 	</table>
@@ -198,9 +197,10 @@ font-size: 16px;"> Welcome to the Spastics&nbsp; <a href="#" class="btn btn-dang
 	<br>
 	<input type="reset" name="reset">
 </form>
-					
-				</div>
+                               
+                    
                 
+           </div>
                  <!-- /. ROW  -->
                 
                  <!-- /. ROW  -->           
@@ -222,8 +222,7 @@ font-size: 16px;"> Welcome to the Spastics&nbsp; <a href="#" class="btn btn-dang
       <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
     
-	
-		
+
 
 </body>
 </html>
