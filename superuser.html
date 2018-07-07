@@ -2,14 +2,22 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-select option[value="Approved"] { /* value Not val */
-    background-color:  white;
-}
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+<script type="text/javascript">
 
-select option[value="Not Approved"] { /* value Not val */
-    background-color: red;
-}
+$(document).ready(function(){
+    $('#table_id td.y_n').each(function(){
+        if ($(this).text() == 'Approved') {
+            $(this).css('background-color','green');
+        }
+        else{
+        	$(this).css('background-color','red');
+        }
+    });
+});
+
+</script>
+<style>
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -30,7 +38,7 @@ tr:nth-child(even) {
 </head>
 <body>
 	<form>
-<table>
+<table id="table_id">
 	<tr>
 		<th>Days and slots</th>
 		<th>DAY 1</th>
@@ -42,23 +50,23 @@ tr:nth-child(even) {
 
 	<tr>
 		<th>Slot 1</th>
-		<td><select>
+		<td class="y_n"><select>
 			<option>Approved</option>
 			<option> Not Approved</option>
 		</select></td>
-		<td><select>
+		<td class="y_n"><select>
 			<option>Approved</option>
 			<option> Not Approved</option>
 		</select></td>
-		<td><select>
+		<td class="y_n"><select>
 			<option>Approved</option>
 			<option> Not Approved</option>
 		</select></td>
-		<td><select>
+		<td class="y_n"><select>
 			<option>Approved</option>
 			<option> Not Approved</option>
 		</select></td>
-		<td><select>
+		<td class="y_n"><select>
 			<option>Approved</option>
 			<option> Not Approved</option>
 		</select></td>
@@ -67,23 +75,23 @@ tr:nth-child(even) {
 
 	<tr>
 		<th>Slot 2</th>
-		<td><select>
+		<td class="y_n"><select>
 			<option>Approved</option>
 			<option> Not Approved</option>
 		</select></td>
-		<td><select>
+		<td class="y_n"><select>
 			<option>Approved</option>
 			<option> Not Approved</option>
 		</select></td>
-		<td><select>
+		<td class="y_n"><select>
 			<option>Approved</option>
 			<option> Not Approved</option>
 		</select></td>
-		<td><select>
+		<td class="y_n"><select>
 			<option>Approved</option>
 			<option> Not Approved</option>
 		</select></td>
-		<td><select>
+		<td class="y_n"><select>
 			<option>Approved</option>
 			<option> Not Approved</option>
 		</select></td>
@@ -91,23 +99,23 @@ tr:nth-child(even) {
 
 	<tr>
 		<th>Slot 3</th>
-		<td><select>
+		<td class="y_n"><select>
 			<option>Approved</option>
 			<option> Not Approved</option>
 		</select></td>
-		<td><select>
+		<td class="y_n"><select>
 			<option>Approved</option>
 			<option> Not Approved</option>
 		</select></td>
-		<td><select>
+		<td class="y_n"><select>
 			<option>Approved</option>
 			<option> Not Approved</option>
 		</select></td>
-		<td><select>
+		<td class="y_n"><select>
 			<option>Approved</option>
 			<option> Not Approved</option>
 		</select></td>
-		<td><select>
+		<td class="y_n"><select>
 			<option>Approved</option>
 			<option> Not Approved</option>
 		</select></td>
