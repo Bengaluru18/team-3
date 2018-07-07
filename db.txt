@@ -1,0 +1,10 @@
+CREATE TABLE doc1
+(
+dept varchar(20),
+date1 DATE(20),
+slot1 varchar(20),
+slot2 varchar(20),
+slot3 varchar(20)
+);
+INSERT INTO doc1 (dept,date1,slot1,slot2,slot3)  VALUES ('Medical Doctor','2018-07-09','white','white','white');
+INSERT INTO doc1 (dept,date1,slot1,slot2,slot3)  VALUES ('Medical Doctor','2018-07-09','white','white','white');
