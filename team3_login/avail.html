@@ -3,13 +3,10 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-select option[value=" "] { /* value  Scheduleval */
-    background-color:  white;
-}
+.with_bg{background-color:#e7fcde; display: block; font-size: 14px; border: 2px solid ; cursor: pointer;}
+.without_bg{background-color:#FFFFFF; cursor: pointer;}
 
-select option[value=" Schedule "] { /* value  Scheduleval */
-    background-color: red;
-}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -32,9 +29,9 @@ tr:nth-child(even) {
 	<form>
 		<textarea name="history" rows="10" cols="100" placeholder="Add history here"></textarea><br><br>
 		<select>
-			<option>Doctor 1</option>
-			<option>Doctor 2</option>
-			<option>Doctor 3</option>
+			<option onclick="change();">Doctor 1</option>
+			<option >Doctor 2</option>
+			<option >Doctor 3</option>
 		</select>
 		<br><br>
 <table>
@@ -49,74 +46,74 @@ tr:nth-child(even) {
 
 	<tr>
 		<th>Slot 1</th>
-		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+		<td><select name="select"   style="background-color:#FFFFFF;display: block; font-size: 14px;" onmouseover="this.className='with_bg'; "  onChange="this.style.backgroundColor=this.options[this.selectedIndex].style.backgroundColor">
+			<option style="background-color:white;" value="0"></option>
+			<option style="background-color:orange;" value="1"> Schedule </option>
 		</select></td>
-		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+		<td><select name="select"   style="background-color:#FFFFFF;display: block; font-size: 14px;" onmouseover="this.className='with_bg'; "  onChange="this.style.backgroundColor=this.options[this.selectedIndex].style.backgroundColor">
+			<option style="background-color:white;" value="0"></option>
+			<option style="background-color:orange;" value="1"> Schedule </option>
 		</select></td>
-		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+		<td><select name="select"   style="background-color:#FFFFFF;display: block; font-size: 14px;" onmouseover="this.className='with_bg'; "  onChange="this.style.backgroundColor=this.options[this.selectedIndex].style.backgroundColor">
+			<option style="background-color:white;" value="0"></option>
+			<option style="background-color:orange;" value="1"> Schedule </option>
 		</select></td>
-		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+		<td><select name="select"   style="background-color:#FFFFFF;display: block; font-size: 14px;" onmouseover="this.className='with_bg'; "  onChange="this.style.backgroundColor=this.options[this.selectedIndex].style.backgroundColor">
+			<option style="background-color:white;" value="0"></option>
+			<option style="background-color:orange;" value="1"> Schedule </option>
 		</select></td>
-		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+		<td><select name="select"   style="background-color:#FFFFFF;display: block; font-size: 14px;" onmouseover="this.className='with_bg'; "  onChange="this.style.backgroundColor=this.options[this.selectedIndex].style.backgroundColor">
+			<option style="background-color:white;" value="0"></option>
+			<option style="background-color:orange;" value="1"> Schedule </option>
 		</select></td>
 	</tr>
 
 
 	<tr>
 		<th>Slot 2</th>
-		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+		<td><select name="select"   style="background-color:#FFFFFF;display: block; font-size: 14px;" onmouseover="this.className='with_bg'; "  onChange="this.style.backgroundColor=this.options[this.selectedIndex].style.backgroundColor">
+			<option style="background-color:white;" value="0"></option>
+			<option style="background-color:orange;" value="1"> Schedule </option>
 		</select></td>
-		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+		<td><select name="select"   style="background-color:#FFFFFF;display: block; font-size: 14px;" onmouseover="this.className='with_bg'; "  onChange="this.style.backgroundColor=this.options[this.selectedIndex].style.backgroundColor">
+			<option style="background-color:white;" value="0"></option>
+			<option style="background-color:orange;" value="1"> Schedule </option>
 		</select></td>
-		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+		<td><select name="select"   style="background-color:#FFFFFF;display: block; font-size: 14px;" onmouseover="this.className='with_bg'; "  onChange="this.style.backgroundColor=this.options[this.selectedIndex].style.backgroundColor">
+			<option style="background-color:white;" value="0"></option>
+			<option style="background-color:orange;" value="1"> Schedule </option>
 		</select></td>
-		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+		<td><select name="select"   style="background-color:#FFFFFF;display: block; font-size: 14px;" onmouseover="this.className='with_bg'; "  onChange="this.style.backgroundColor=this.options[this.selectedIndex].style.backgroundColor">
+			<option style="background-color:white;" value="0"></option>
+			<option style="background-color:orange;" value="1"> Schedule </option>
 		</select></td>
-		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+		<td><select name="select"   style="background-color:#FFFFFF;display: block; font-size: 14px;" onmouseover="this.className='with_bg'; "  onChange="this.style.backgroundColor=this.options[this.selectedIndex].style.backgroundColor">
+			<option style="background-color:white;" value="0"></option>
+			<option style="background-color:orange;" value="1"> Schedule </option>
 		</select></td>
 	</tr>
 
 	<tr>
 		<th>Slot 3</th>
-		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+		<td><select name="select"   style="background-color:#FFFFFF;display: block; font-size: 14px;" onmouseover="this.className='with_bg'; "  onChange="this.style.backgroundColor=this.options[this.selectedIndex].style.backgroundColor">
+			<option style="background-color:white;" value="0"></option>
+			<option style="background-color:orange;" value="1"> Schedule </option>
 		</select></td>
-		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+		<td><select name="select"   style="background-color:#FFFFFF;display: block; font-size: 14px;" onmouseover="this.className='with_bg'; "  onChange="this.style.backgroundColor=this.options[this.selectedIndex].style.backgroundColor">
+			<option style="background-color:white;" value="0"></option>
+			<option style="background-color:orange;" value="1"> Schedule </option>
 		</select></td>
-		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+		<td><select name="select"   style="background-color:#FFFFFF;display: block; font-size: 14px;" onmouseover="this.className='with_bg'; "  onChange="this.style.backgroundColor=this.options[this.selectedIndex].style.backgroundColor">
+			<option style="background-color:white;" value="0"></option>
+			<option style="background-color:orange;" value="1"> Schedule </option>
 		</select></td>
-		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+		<td><select name="select"   style="background-color:#FFFFFF;display: block; font-size: 14px;" onmouseover="this.className='with_bg'; "  onChange="this.style.backgroundColor=this.options[this.selectedIndex].style.backgroundColor">
+			<option style="background-color:white;" value="0"></option>
+			<option style="background-color:orange;" value="1"> Schedule </option>
 		</select></td>
-		<td><select>
-			<option> </option>
-			<option>  Schedule </option>
+		<td><select name="select"   style="background-color:#FFFFFF;display: block; font-size: 14px;" onmouseover="this.className='with_bg'; "  onChange="this.style.backgroundColor=this.options[this.selectedIndex].style.backgroundColor">
+			<option style="background-color:white;" value="0"></option>
+			<option style="background-color:orange;" value="1"> Schedule </option>
 		</select></td>
 	</tr>
 	</table>
