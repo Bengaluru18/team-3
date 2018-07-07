@@ -10,20 +10,24 @@
     	Connection con;
     	Statement stmt;
     	ResultSet rs;
-    %>
+    	String status;
+    	String msg;
+    	%>
     <%
     DRIVER = "com.mysql.jdbc.Driver";
     HOST = "jdbc:mysql://localhost:3306/ssk";
     USER = "root";
     PASS = "76757476Anush";
     con = null;
-   
+    status = request.getParameter("status");
+    %>
+    <% 
+  	String usrName = request.getParameter("email");
+    String pass = request.getParameter("pass");
    	
    	Class.forName(DRIVER);
    	con = DriverManager.getConnection(HOST,USER,PASS);
-   	String query = "Select * from users where username = 'recu1'";
-   	stmt = con.createStatement();
-   	rs = stmt.executeQuery(query);
+   	
   
     %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -33,18 +37,37 @@
 <title>Insert title here</title>
 </head>
 <body>
-<table border="1">
-	 
-	 <tbody>
-	  <% while (rs.next()) { %>
-	  	<tr>
-	  		<td><%=rs.getString("roles") %></td>
-	  		
-	  	</tr>
-	  
-	  <% } %>
-	 
-	 </tbody>
-	</table>
+<% if(status != null) {
+	
+		if (status.equals("2"))
+			session.invalidate();
+		
+		else {
+			try{
+				String query = "Select * from users where username = '"+usrName+"'";
+		   		stmt = con.createStatement();
+		   		rs = stmt.executeQuery(query);
+		   		System.out.println("here");
+				rs.next();
+				System.out.println("now here");
+				String pwd = rs.getString("password");
+				if(pwd.equals(pass)){
+					session.setAttribute("user",usrName);
+					//session.sendRedirect("");
+				}
+				else{
+					msg = "Incorrect Password";
+				}
+			}
+			catch(Exception e){
+				msg = "Incorrect Username";
+			}
+			
+			
+		}
+	}
+	%>
+	<p><%=msg%></p><br>
+	
 </body>
 </html>
