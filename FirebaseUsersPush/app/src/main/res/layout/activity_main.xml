@@ -20,11 +20,11 @@
         tools:layout_editor_absoluteY="244dp" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/editText5"
+        android:layout_alignStart="@+id/un"
         android:layout_marginTop="181dp"
         android:ems="10"
         android:inputType="textPassword"
@@ -32,7 +32,7 @@
         tools:layout_editor_absoluteY="154dp" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/un"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
