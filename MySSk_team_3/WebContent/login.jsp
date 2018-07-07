@@ -48,21 +48,21 @@
 				String query = "Select * from users where username = '"+usrName+"'";
 		   		stmt = con.createStatement();
 		   		rs = stmt.executeQuery(query);
-		   		System.out.println("here");
+		   		
 				rs.next();
-				System.out.println("now here");
+				
 				String pwd = rs.getString("password");
 				if(pwd.equals(pass)){
 					int index = usrName.indexOf('@');
 					String firstPartEmail = usrName.substring(0,index);
 					session.setAttribute("user",firstPartEmail);
-					role = rs.getString("role");
+					role = rs.getString("roles");
 					session.setAttribute("role",role);
 					if(role.equals("doctor")){
-						
+						response.sendRedirect("doc_home.html");
 					}
 					else if(role.equals("reception")){
-						
+						response.sendRedirect("recep_home.html");
 					}
 					else{
 						
@@ -75,6 +75,7 @@
 			}
 			catch(Exception e){
 				msg = "Incorrect Username";
+				System.out.println(e);
 			}
 			
 			
