@@ -16,7 +16,7 @@
     	
     	%>
     	<%
-    DRIVER = "com.mysql.cj.jdbc.Driver";
+    DRIVER = "com.mysql.jdbc.Driver";
     HOST = "jdbc:mysql://localhost:3306/ssk";
     USER = "root";
     PASS = "76757476Anush";
@@ -167,7 +167,10 @@ font-size: 16px;"> Welcome to the Spastics&nbsp; <a href="#" class="btn btn-dang
 	
 	</table>
 	<br>
-	<form action = "confirm.jsp" method = "get">
+	
+	
+</form>
+<form action = "confirm.jsp">
     
 	<input type="text" placeholder="doctor text box" name = "doctor"><br><br>
     <input type="text" placeholder="child text box" name = "child"><br><br>
@@ -175,8 +178,6 @@ font-size: 16px;"> Welcome to the Spastics&nbsp; <a href="#" class="btn btn-dang
     <input type="text" placeholder="day text box" name = "day"><br><br>
 	<input type="submit" name="submit" value="Submit"><br>
 		
-</form>
-	
 </form>
                                
                     
