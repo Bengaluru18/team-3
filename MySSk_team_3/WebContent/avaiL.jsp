@@ -273,6 +273,14 @@ font-size: 16px;"> Welcome to the Spastics&nbsp; <a href="#" class="btn btn-dang
 	<br>
 	<input type="reset" name="reset">
 </form>
+<form action = "success.jsp">
+    <input type="hidden" name="child" value=<%=nm %>>
+    <input type="hidden" name="doc" value=<%=doc%>>    
+	<input type="text" placeholder="One text box" name = "day"><br><br>
+    <input type="text" placeholder="Second text box" name = "slot"><br><br>
+	<input type="submit" name="submit" value="Submit"><br>
+		
+</form>
 					
 				</div>
                 
@@ -296,9 +304,8 @@ font-size: 16px;"> Welcome to the Spastics&nbsp; <a href="#" class="btn btn-dang
      
       <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
+    <div>
     
-	
-		
-
+</div>
 </body>
 </html>
