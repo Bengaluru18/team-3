@@ -19,16 +19,26 @@
     	String pname;
     	String add;
     	String phno;
+    	
+    	String dept;
+    	String day;
+    	String slot1;
+    	String slot2;
+    	String slot3;  
+    	ArrayList<String> days = new ArrayList<String>();
+    	
     	%>
     	<%
+    	//Session.setAttribute("flag",false);
     DRIVER = "com.mysql.jdbc.Driver";
     HOST = "jdbc:mysql://localhost:3306/ssk";
     USER = "root";
     PASS = "76757476Anush";
     con = null;
-    
-    String rgno = request.getParameter("regno");
-    
+    String rgno_or_name;
+    String rgno = request.getParameter("regno");    
+    String doc=request.getParameter("doc");
+    System.out.println(doc);
     %>
      <% 
   	
@@ -45,6 +55,17 @@
   	pname = rs.getString("pname");
   	add = rs.getString("address");
   	phno = rs.getString("phno");
+  	
+  	String qry1 = "Select * from "+doc;
+  	ResultSet rs1 = stmt.executeQuery(qry1);
+  	while(rs1.next()){
+  	
+  		days.add(rs1.getString("slot1"));
+  		days.add(rs1.getString("slot2"));
+  		days.add(rs1.getString("slot3"));
+	
+	
+  	}
     %>
 
 <html>
@@ -150,7 +171,7 @@ font-size: 16px;"> Welcome to the Spastics&nbsp; <a href="#" class="btn btn-dang
                  <!-- /. ROW  -->
                 <hr />  
 				<div class="row">
-					<form "float:right;">
+					<form "float:right;" action = "availhelper.jsp">
 					<textarea name="history" rows="10" cols="100" placeholder="Add history here">
 					<%=nm %>
 					<%=dob %>
@@ -160,12 +181,8 @@ font-size: 16px;"> Welcome to the Spastics&nbsp; <a href="#" class="btn btn-dang
 					
 					
 					</textarea><br><br>
-		<select>
-			<option>Doctor 1</option>
-			<option>Doctor 2</option>
-			<option>Doctor 3</option>
-		</select>
 		<br><br>
+		
 <table>
 	<tr>
 		<th>Days and slots</th>
@@ -179,23 +196,23 @@ font-size: 16px;"> Welcome to the Spastics&nbsp; <a href="#" class="btn btn-dang
 	<tr>
 		<th>Slot 1</th>
 		<td><select>
-			<option> </option>
+			<option><%=days.get(0) %> </option>
 			<option>  Schedule </option>
 		</select></td>
 		<td><select>
-			<option> </option>
+			<option> <%= days.get(3)%></option>
 			<option>  Schedule </option>
 		</select></td>
 		<td><select>
-			<option> </option>
+			<option> <%=days.get(6) %></option>
 			<option>  Schedule </option>
 		</select></td>
 		<td><select>
-			<option> </option>
+			<option><%=days.get(9) %> </option>
 			<option>  Schedule </option>
 		</select></td>
 		<td><select>
-			<option> </option>
+			<option><%=days.get(12) %> </option>
 			<option>  Schedule </option>
 		</select></td>
 	</tr>
@@ -204,23 +221,23 @@ font-size: 16px;"> Welcome to the Spastics&nbsp; <a href="#" class="btn btn-dang
 	<tr>
 		<th>Slot 2</th>
 		<td><select>
-			<option> </option>
+			<option><%=days.get(1) %> </option>
 			<option>  Schedule </option>
 		</select></td>
 		<td><select>
-			<option> </option>
+			<option><%=days.get(4) %> </option>
 			<option>  Schedule </option>
 		</select></td>
 		<td><select>
-			<option> </option>
+			<option> <%=days.get(7) %></option>
 			<option>  Schedule </option>
 		</select></td>
 		<td><select>
-			<option> </option>
+			<option> <%=days.get(10) %></option>
 			<option>  Schedule </option>
 		</select></td>
 		<td><select>
-			<option> </option>
+			<option><%=days.get(13) %> </option>
 			<option>  Schedule </option>
 		</select></td>
 	</tr>
@@ -228,29 +245,31 @@ font-size: 16px;"> Welcome to the Spastics&nbsp; <a href="#" class="btn btn-dang
 	<tr>
 		<th>Slot 3</th>
 		<td><select>
-			<option> </option>
+			<option><%=days.get(2) %> </option>
 			<option>  Schedule </option>
 		</select></td>
 		<td><select>
-			<option> </option>
+			<option> <%=days.get(5) %></option>
 			<option>  Schedule </option>
 		</select></td>
 		<td><select>
-			<option> </option>
+			<option><%=days.get(8) %> </option>
 			<option>  Schedule </option>
 		</select></td>
 		<td><select>
-			<option> </option>
+			<option> <%=days.get(11) %></option>
 			<option>  Schedule </option>
 		</select></td>
 		<td><select>
-			<option> </option>
+			<option><%=days.get(14) %> </option>
 			<option>  Schedule </option>
 		</select></td>
 	</tr>
+
 	</table>
+
 	<br>
-	<input type="submit" name="submit" value="Submit"><br>
+	<input type="submit" name="submit" value="Submit" ><br>
 	<br>
 	<input type="reset" name="reset">
 </form>
