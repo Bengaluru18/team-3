@@ -33,7 +33,7 @@
     DRIVER = "com.mysql.jdbc.Driver";
     HOST = "jdbc:mysql://localhost:3306/ssk";
     USER = "root";
-    PASS = "76757476Anush";
+    PASS = "";
     con = null;
     String rgno_or_name;
     String rgno = request.getParameter("regno");    
