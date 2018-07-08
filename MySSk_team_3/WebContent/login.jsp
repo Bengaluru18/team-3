@@ -65,7 +65,7 @@
 						response.sendRedirect("recep_home.html");
 					}
 					else{
-						response.sendRedirect("su_home.html");
+						response.sendRedirect("index3.html");
 					}
 					//session.sendRedirect("");
 				}
