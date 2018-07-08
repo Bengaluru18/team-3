@@ -1,0 +1,14 @@
+form action="editinfo" method="post">
+<table>
+  <tr>
+    <td>Username:</td>
+    <td>
+      <input type="text" value="<%if( request.getSession().getAttribute(" parameter_whatever_you_passed ") != null
+{
+request.getSession().getAttribute("parameter_whatever_you_passed ").toString();
+}
+ %>" />
+    </td>
+  </tr>
+</table>
+</form>
